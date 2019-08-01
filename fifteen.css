@@ -1,0 +1,39 @@
+html{
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+h1,p,button{
+    font-family: cursive ;
+    font-size: 16pt;
+}
+#puzzlearea{
+    height: 400px;
+    width:400px;
+    border:5px solid black;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+.puzzle{
+    float:left;
+    width:90px;
+    height: 90px;
+    border:5px solid black;
+    /*font-size: 40pt;*/
+    /*position:absolute;*/
+    /*top:50%;*/
+}
+.number{
+    margin:0;
+    position: relative;
+    top:15px;
+    font-size: 40pt;
+}
+.onchoose{
+    color: red;
+    border:5px solid red;
+    cursor:pointer;
+
+
+}

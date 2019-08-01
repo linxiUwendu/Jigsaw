@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--助教好，我是1652733，栾浩正，这是我的第四次作业，其中.html,.css均已通过w3c的验证，.js文件已通过jslint的检验，并没有error,仅存在一些警告
+本作业不同于文档建议的地方如下：
+首先是关于dom树，本项目自从在js初始化中插入了16个子div元素之外，自始至终不改变div的顺序，点击触发的事件改变的是Css中的属性。
+其次是关于有解的算法。本项目并未采用文档中建议的算法，而是应用了自己独创的算法。经过本人观察，4*4的迷宫，总的可能出现的情况
+是16！种，其中有一半是有解的，另一半无解。这里关于有解无解我们通过计算less(i)来得到，我的做法是先生成15个随机数，结尾加上16后判断
+是否有解。若有解则继续，若无解则重复生成直到有解。本算法的时间复杂度小于文档中的建议算法。
+最后，与文档中建议不同的是，本项目中是通过二维数组来存储数据，虽然交换数值不方便，但是每次渲染都在数组改变之后才进行，很大程度上减少了
+错误出现的概率，并且避免了更改html里面的元素。
+以上就是本次作业的全部。-->
+<html lang="en">
+	<!--
+	You should not modify fifteen.html.  Your JS code should work with an
+	unmodified version of this file.
+	-->
+	<head>
+		<link href="fifteen.gif"
+		      type="image/gif" rel="shortcut icon" />
+		<!-- your files that you will write -->
+		<link href="fifteen.css" type="text/css" rel="stylesheet" />
+		<script src="fifteen.js"></script>
+        <title>Fifteen Puzzle</title>
+	</head>
+
+	<body>
+		<h1>Fifteen Puzzle</h1>
+
+		<p>
+			The goal of the fifteen puzzle is to un-jumble its fifteen squares
+			by repeatedly making moves that slide squares into the empty space.
+			How quickly can you solve it?
+		</p>
+		
+		<div id="puzzlearea">
+		<!--
+			this area holds the actual fifteen puzzle pieces
+			add to it as you need to
+		-->
+		</div>
+
+		<p id="controls">
+			<button id="shufflebutton">Shuffle</button>
+		</p>
+		
+		<div id="output"></div>
+		
+		<p>
+			American puzzle author and mathematician Sam Loyd is often falsely
+			credited with creating the puzzle; indeed, Loyd claimed from 1891
+			until his death in 1911 that he invented it.
+			The puzzle was actually created around 1874 by Noyes Palmer Chapman,
+			a postmaster in Canastota, New York.
+		</p>
+
+		<div id="w3c">
+			<a href="https://webster.cs.washington.edu/validate-html.php">
+				<img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php">
+				<img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+			<a href="https://webster.cs.washington.edu/jslint/?referer">
+				<img src="https://webster.cs.washington.edu/images/w3c-js.png" alt="Valid JS" /></a>
+		</div>
+	</body>
+</html>
